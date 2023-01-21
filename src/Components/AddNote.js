@@ -20,9 +20,9 @@ const AddNote = ({ handleAddNote }) => {
     }
     return(
         <div className="note new">
-            <textarea onChange={handleChange} rows="6" cols="10" placeholder="type here ......" />
+            <textarea onChange={handleChange} rows="6" cols="10" placeholder= "Type here......." />
             <div className="note-footer">
-                <small> {characterLimit-noteText.length}reamaning </small>
+                <small> {characterLimit-noteText.length} Reamaning </small>
                 <button value={noteText} onClick={handleSaveClick} className="save"> Save </button>
             </div>
         </div>
