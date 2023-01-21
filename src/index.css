@@ -11,3 +11,164 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/*
+.container{
+  min-height: 100vh;
+}
+
+.note {
+  background-color: #7e5ef0;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  min-height: 200px;
+  min-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notes-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  border-radius: 10px;
+
+}
+
+.note .new {
+  background-color: rgb(11, 226, 43);
+} 
+
+textarea{
+  background-color: rgb(11, 226, 43);
+  border: none;
+  resize: none;
+}
+textarea:focus{
+  outline: none;
+}
+
+.save{
+  background-color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+}
+ .header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .dark-mode{
+  background-color: rgb(44, 44, 44);
+ }
+ .dark-mode h1{
+  color: white;
+ }
+ */
+
+ .header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.dark-mode {
+	background-color: black;
+}
+
+.dark-mode h1 {
+	color: white;
+}
+
+.container {
+/*	max-width: 960px; */
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	min-height: 100vh;
+}
+
+.notes-list {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(
+		auto-fill,
+		minmax(250px, 1fr)
+	);
+}
+
+.note.new {
+	background-color: #67d7cc;
+}
+
+textarea {
+	border: none;
+	resize: none;
+	background-color: #67d7cc;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+.save {
+	background-color: #e1e1e1;
+	border: none;
+	border-radius: 15px;
+	padding: 5px 10px 5px 10px;
+}
+
+.save:hover {
+	background-color: #ededed;
+	cursor: pointer;
+}
+
+.note {
+	background-color: #43bff9;
+	border-radius: 10px;
+	padding: 1rem;
+	min-height: 170px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+}
+
+.note-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.delete-icon {
+	cursor: pointer;
+}
+
+.search {
+	display: flex;
+	align-items: center;
+	background-color: rgb(233, 233, 233);
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 1.5em;
+}
+
+.search input {
+	border: none;
+	background-color: rgb(233, 233, 233);
+	width: 100%;
+}
+
+.search input:focus {
+	outline: none;
+}
